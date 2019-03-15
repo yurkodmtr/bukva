@@ -4,6 +4,23 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
+.cover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.cover(@url) {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(@url);
+}
 .placeholder(@color) {
   &::-webkit-input-placeholder {
        color: @color;
