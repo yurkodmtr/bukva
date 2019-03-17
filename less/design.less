@@ -956,7 +956,7 @@ body {
     }
 }
 
-.blog {
+.blog_homepage {
     .cover('../images/blog_bg.jpg');
     .item {
         &__list {
@@ -1157,6 +1157,211 @@ body {
         a {
             display:inline-block;
             vertical-align:middle;
+        }
+    }
+}
+
+// blog
+.blog__home_page { 
+    .center {
+        .flex-display(@display: flex);
+        .justify-content(@justify: space-between);
+        margin-bottom:50px;
+    }    
+    .container {
+        .flex-basis(@width: 74.35897435897436%);
+        max-width:74.35897435897436%;
+        width:74.35897435897436%;
+        .large_post {
+            margin-bottom:40px;
+            position:relative;
+            padding-top:57.47126436781609%;
+            .cover;
+            .description { 
+                position:absolute;
+                left:0px;
+                bottom:0px;
+                width:100%;
+                background:rgba(0,0,0,0.7);                
+                .category {
+                    position:absolute;
+                    left:19px;
+                    top:-10px;
+                    background:#dfe1e6;
+                    padding:5px 10px 5px 10px;
+                    color:@black;
+                    font-size:14px;
+                    .medium;
+                }
+                .excerpt {
+                    padding:22px 19px 6px 19px;
+                    a {
+                        font-size:22px;
+                        line-height:28px;
+                        color:@white;
+                        .medium;
+                    }
+                }
+                .bottom {
+                    padding:8px 18px 10px 18px;
+                    border-top:1px solid rgba(255,255,255,0.7);
+                    .left_side {
+                        float:left;
+                        .author {
+                            margin-right:10px;
+                            display:inline-block;
+                            vertical-align:middle;
+                            .medium;
+                            font-size:14px;
+                            color:@yellow;
+                            text-decoration:underline;
+                            &:hover {
+                                text-decoration:none;
+                            }
+                        }
+                        .date {
+                            display:inline-block;
+                            vertical-align:middle;
+                            font-size:12px;
+                            color:@white;
+                        }
+                    }
+                    .right_side {
+                        float:right;
+                        span {
+                            display:inline-block;
+                            color:@white;
+                            font-size:12px;
+                            position:relative;
+                            padding-left:20px;
+                        }
+                        .views {
+                            margin-right:10px;
+                            &:before {
+                                content:'';
+                                display:block;
+                                width:16px;
+                                height:11px;
+                                background:url(../images/views.png) no-repeat top center;
+                                position:absolute;
+                                left:0px;
+                                top:0px;
+                            }
+                        }
+                        .comments {
+                            &:before {
+                                content:'';
+                                display:block;
+                                width:13px;
+                                height:12px;
+                                background:url(../images/comments.png) no-repeat top center;
+                                position:absolute;
+                                left:0px;
+                                top:0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sidebar {
+        .flex-basis(@width: 23.07692307692308%);
+        max-width:23.07692307692308%;
+        width:23.07692307692308%;
+        &__block {
+            margin-bottom:30px;
+            &:last-child {
+                margin-bottom:0px;
+            }
+        }
+        h2 {
+            font-size:30px;
+            line-height:32px;
+            .medium;
+            color:@black;
+            margin-bottom:20px;
+        }
+        .categories {
+            ul {
+                li {
+                    margin-bottom:12px;
+                    &:last-child {
+                        margin-bottom:0px;
+                    }
+                    a {
+                        font-size:14px;
+                        line-height:18px;
+                        color:@black;
+                        .semibold;
+                        text-transform:uppercase;
+                        &:hover {
+                            text-decoration:underline;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar_posts {
+            .item {
+                margin-bottom:30px;
+                &:last-child {
+                    margin-bottom:0px;
+                }
+                .category {
+                    margin-bottom:12px;
+                    a {
+                        display:inline-block;
+                        padding:5px 11px 5px 11px;
+                        background:#dee3f3;
+                        color:@black;
+                        font-size:14px;
+                        &:hover {
+                            text-decoration:underline;
+                        }
+                    }
+                }
+                .excerpt {
+                    margin-bottom:8px;
+                    a {
+                        font-size:16px;
+                        line-height:22px;
+                        color:@black;
+                        &:hover {
+                            text-decoration:underline;
+                        }
+                    }
+                }
+                .descr {
+                    .author {
+                        display:inline-block;
+                        vertical-align:middle;
+                        margin-right:15px;
+                        font-size:14px;
+                        color:@yellow;
+                        .medium;
+                        text-decoration:underline;
+                        &:hover {
+                            text-decoration:none;
+                        }
+                    }
+                    .date {
+                        display:inline-block;
+                        vertical-align:middle;
+                        font-size:12px;
+                        color:@black;
+                    }
+                }
+            }
+        }
+        .banner {
+            a {
+                display:block;
+                img {
+                    display:block;
+                    width:100%;
+                }
+            }            
         }
     }
 }
